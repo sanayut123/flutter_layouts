@@ -39,17 +39,36 @@ class MyApp extends StatelessWidget {
 class layoutWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
-        Expanded(
-          child: Container(color: Colors.red)
+        Container(
+          height: 100.0,
+          color: Colors.red,
         ),
-        Expanded(
-          child: Container(color: Colors.blue)
+        Container(
+          height: 100.0,
+          color: Colors.blue,
         ),
-        Expanded(
-          child: Container(color: Colors.green)
+        Container(
+          height: 100.0,
+          color: Colors.green,
         ),
+        Container(
+          height: 100.0,
+          color: Colors.orange,
+        ),
+        Container(
+          height: 100.0,
+          color: Colors.green,
+        ),
+        Container(
+          height: 100.0,
+          color: Colors.grey,
+        ),
+        Container(
+          height: 100.0,
+          color: Colors.pink,
+        ),        
       ],
     );
   }

@@ -39,23 +39,16 @@ class MyApp extends StatelessWidget {
 class layoutWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,// Alignment(0, 0), //-1<x<1   -1<y<1   0.0 center
+    return Column(
       children: [
-        Container(
-          width: 300.0,
-          height: 300.0,
-          color: Colors.red,
+        Expanded(
+          child: Container(color: Colors.red)
         ),
-        Container(
-          width: 200.0,
-          height: 200.0,
-          color: Colors.blue,
+        Expanded(
+          child: Container(color: Colors.blue)
         ),
-        Container(
-          width: 100.0,
-          height: 100.0,
-          color: Colors.green,
+        Expanded(
+          child: Container(color: Colors.green)
         ),
       ],
     );

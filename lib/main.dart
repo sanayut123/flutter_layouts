@@ -39,7 +39,8 @@ class MyApp extends StatelessWidget {
 class layoutWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return GridView.count(
+      crossAxisCount: 2,
       children: [
         Container(
           height: 100.0,
@@ -59,7 +60,11 @@ class layoutWidget extends StatelessWidget {
         ),
         Container(
           height: 100.0,
-          color: Colors.green,
+          color: Colors.purple,
+        ),
+        Container(
+          height: 100.0,
+          color: Colors.yellow,
         ),
         Container(
           height: 100.0,
